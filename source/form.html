@@ -6,23 +6,92 @@
   </head>
   <body>
     <header class="page-header">
-      <a>
-        <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Logo Cat Energy">
+      <a href="index.html">
+        <img class="logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Logo Cat Energy">
       </a>
-      <a>
-        <img class="page-header__logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
-      </a>
+      <img class="logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
-        <ul class="site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item site-list__item--current"><a>Подбор программы</a></li>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">Открыть/закрыть меню</button>
+        <ul class="navigation-list">
+          <li class="navigation-list__item"><a href="index.html">Главная</a></li>
+          <li class="navigation-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation-list__item navigation-list__item--current"><a>Подбор программы</a></li>
         </ul>
       </nav>
     </header>
 
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
+      <form class="form-selection" method="post" action="https://echo.htmlacademy.ru">
+        <div class="form-selection__wrapper">
+          <div class="form-selection__basic-info">
+            <label class="form-selection__label">Имя:*<input class="form-selection__input" name="name" type="text"></label>
+            <label class="form-selection__label">Вес (кг):*<input class="form-selection__input" name="weight" type="text"></label>
+            <label class="form-selection__label">Возраст (лет):<input class="form-selection__input" name="age" type="text"></label>
+          </div>
+          <div class="form-selection__radio-box">
+            <!-- при оформлении нестандартными чекбоксами, я добавлю visually-hidden для инпутов и все должно получится, единственное в седоне мы делали отдельно label и input. и пока не могу представить возникнут ли проблемы при стилизации когда они вложены? -->
+            <label class="form-selection__label form-selection__label--radio"><input name="nutrition-program" value="weight-loss" type="radio">Похудение</label>
+            <label class="form-selection__label form-selection__label--radio"><input name="nutrition-program" value="weight-gain" type="radio">Набор массы</label>
+            <label class="form-selection__label form-selection__label--radio"><input name="nutrition-program" value="do-not-know" type="radio">Не знаю (Нужен ваш совет)</label>
+          </div>
+        </div>
+
+        <div class="form-selection__item">
+          <h2 class="form-selection__subtitle">Контактные данные (владельца кота)</h2>
+          <label class="form-selection__label">E-mail:*<input class="form-selection__input" name="email" type="email"></label>
+          <label class="form-selection__label">Телефон:*<input class="form-selection__input" name="phone" type="tel"></label>
+        </div>
+
+        <div class="form-selection__item">
+          <h2 class="form-selection__subtitle">Комментарий</h2>
+          <textarea class="form-selection__textarea" rows="8" cols="80" name="comment"></textarea>
+        </div>
+
+        <div class="form-selection__item">
+          <h2 class="form-selection__subtitle">Дополнительно</h2>
+          <label class="form-selection__label form-selection__label--checkbox"><input name="sweetener" type="checkbox" checked>Сахарозаменитель</label>
+          <label class="form-selection__label form-selection__label--checkbox"><input name="drinking-water" type="checkbox">Питьевая вода</label>
+          <label class="form-selection__label form-selection__label--checkbox"><input name="milk" type="checkbox">Молоко</label>
+          <label class="form-selection__label form-selection__label--checkbox"><input name="vitamins" type="checkbox">Витамины</label>
+        </div>
+
+        <div class="form-selection__item">
+          <button class="button" type="submit">Отправить заявку</button>
+          <p class="form-selection__text">* — Обязательные поля</p>
+        </div>
+      </form>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p>Приглашаем к сотрудничеству дилеров!</p>
+        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <!-- Здесь будет добавлена интерактивная карта -->
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img class="logo-text" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li><a class="social__item social__item--vk" href="#">Vk</a></li>
+          <li><a class="social__item social__item--instagram" href="#">Instagam</a></li>
+          <li><a class="social__item social__item--facebook" href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a class="copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright-image" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy"></a>
+      </div>
+    </footer>
   </body>
 </html>
