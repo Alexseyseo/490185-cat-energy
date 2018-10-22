@@ -1,0 +1,39 @@
+@import "blocks/fonts.scss";
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  /* Ширина временно для стилизации мобильной версии */
+  min-width: 320px;
+  max-width: 768px;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #111111;
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/navigation.scss";
