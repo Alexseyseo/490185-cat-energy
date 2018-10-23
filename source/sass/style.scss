@@ -1,25 +1,28 @@
 @import "blocks/fonts.scss";
 /* Global styles */
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   /* Ширина временно для стилизации мобильной версии */
   min-width: 320px;
   max-width: 768px;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   color: #111111;
   background-color: #ffffff;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -35,5 +38,25 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+@import "blocks/button.scss";
+/* Header styles */
 @import "blocks/page-header.scss";
+@import "blocks/logo.scss";
 @import "blocks/navigation.scss";
+/* Page-main styles */
+@import "blocks/page-main.scss";
+/* Index styles */
+@import "blocks/intro.scss";
+@import "blocks/nutrition-category.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantage.scss";
+@import "blocks/before-after.scss";
+@import "blocks/result.scss";
+@import "blocks/slider.scss";
+/* Bottom page-main site styles */
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+/* Footer styles */
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";

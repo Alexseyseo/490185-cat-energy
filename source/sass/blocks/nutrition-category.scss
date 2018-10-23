@@ -1,0 +1,76 @@
+.nutrition-category {
+  margin-bottom: 30px;
+}
+
+.nutrition-category__item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 20px 20px 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nutrition-category__wrapper-image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  background-color: #68b738;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 67px;
+  /* Я не разобрался с vertical-align и часто выравниваю такие элементы через line-height. И наверняка когда нибудь мне это аукнется(пока еще нет). Мой метод рабочий или лучше сделать по другому как-то? */
+}
+
+.nutrition-category__image {
+  max-width: none;
+  /* декоративные иконки поставлю на место позже, буду делать через отрицательные отступы для каждой картинки в отдельности через модификатор. А возможно тут более универсальный метод, чем уже сделан(на мой взгляд) */
+}
+
+.nutrition-category__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.nutrition-category__desc {
+  /* В макетах точно нет ошибок, все "абзацы" сделаны Arial хотя основной Oswald, и когда шрифт популярный все равно надо указывать три шрифта или достаточно двух */
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nutrition-category__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    margin-left: 14px;
+    content: "";
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
