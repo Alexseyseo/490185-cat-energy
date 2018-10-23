@@ -53,6 +53,12 @@ input[type="radio"].visually-hidden {
 @import "blocks/before-after.scss";
 @import "blocks/result.scss";
 @import "blocks/slider.scss";
+/* Catalog styles */
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/product-description.scss";
+@import "blocks/additives.scss";
+@import "blocks/addition.scss";
 /* Bottom page-main site styles */
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";

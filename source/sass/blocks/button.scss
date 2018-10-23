@@ -15,4 +15,19 @@
   &:active span {
     opacity: 0.3;
   }
+
+  &--more {
+    background-color: #f2f2f2;
+    color: #444444;
+  }
+
+  &--more:hover,
+  &--more:focus,
+  &--more:active {
+    background-color: #ebebeb;
+  }
+
+  &--more:active span {
+    opacity: 0.3;
+  }
 }

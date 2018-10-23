@@ -1,0 +1,46 @@
+.product-card {
+  padding: 25px 20px;
+}
+
+.product-card__info {
+  margin-bottom: 20px;
+}
+
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-card__title a {
+  color: #111111;
+}
+
+.product-card__table {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product-card__button {
+  display: block;
+}
+
+.product-card__text {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  /* Думаю добавить плюсик через псевдокласс этому элементу */
+}
+
+.product-card__subtext {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
