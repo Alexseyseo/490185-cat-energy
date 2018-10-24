@@ -19,20 +19,20 @@
 }
 
 .nutrition-category__wrapper-image {
-  display: inline-block;
+  position: relative;
   width: 50px;
   height: 50px;
   margin-right: 20px;
   background-color: #68b738;
   border-radius: 50%;
-  text-align: center;
-  line-height: 67px;
-  /* Я не разобрался с vertical-align и часто выравниваю такие элементы через line-height. И наверняка когда нибудь мне это аукнется(пока еще нет). Мой метод рабочий или лучше сделать по другому как-то? */
 }
 
 .nutrition-category__image {
+  position: absolute;
   max-width: none;
-  /* декоративные иконки поставлю на место позже, буду делать через отрицательные отступы для каждой картинки в отдельности через модификатор. А возможно тут более универсальный метод, чем уже сделан(на мой взгляд) */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nutrition-category__title {
