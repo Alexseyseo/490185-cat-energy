@@ -2,8 +2,12 @@
   padding-bottom: 30px;
 }
 
-.form-selection__item {
+.form-selection__wrapper {
+  @include container;
   padding: 0 20px;
+}
+
+.form-selection__item {
   margin-bottom: 25px;
 
   & p {
@@ -43,6 +47,8 @@
 }
 
 .form-selection__subtitle {
+  @include container;
+  padding: 0 20px;
   margin-top: 0;
   margin-bottom: 30px;
   padding-right: 80px;
@@ -66,7 +72,7 @@
 }
 
 .form-selection__text {
-  font-family: "Arial", sans-serif;
+  font-family: $font-small-text;
   font-size: 14px;
   line-height: 16px;
   color: #444444;

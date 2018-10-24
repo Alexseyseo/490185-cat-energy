@@ -1,10 +1,11 @@
 .catalog__list {
-  margin: 0;
+  @include container;
   padding: 0;
   list-style: none;
   border-top: 1px solid #ededed;
 }
 
 .catalog__item {
-  border-bottom: 1px solid #ededed;
+  border: 1px solid #ededed;
+  border-top: none;
 }

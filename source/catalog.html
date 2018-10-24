@@ -7,13 +7,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img src="../img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
-      </a>
-
-      <nav class="navigation">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo_image" src="../img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
+        </a>
         <button class="navigation__toggle" type="button">Открыть/закрыть меню</button>
-        <ul class="navigation__list">
+      </div>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
           <li class="navigation__item"><a class="navigation__link navigation__link--current">Каталог продукции</a></li>
           <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
@@ -195,51 +197,55 @@
       </section>
 
       <section class="additives">
-        <h2 class="additives__title">Дополнительные товары</h2>
-        <ul class="additives__list">
-          <li class="additives__item addition">
-            <h3 class="addition__title"><a href="">Сахарозаменитель</a></h3>
-            <ul class="addition__list">
-              <li class="addition__unit">1 упаковка (100 г)</li>
-              <li class="addition__cost">100 Р.</li>
-            </ul>
-            <a href="#" class="addition__button button"><span>Заказать</span></a>
-          </li>
-          <li class="additives__item addition">
-            <h3 class="addition__title"><a href="">Питьевая вода</a></h3>
-            <ul class="addition__list">
-              <li class="addition__unit">5 литров</li>
-              <li class="addition__cost">50 Р.</li>
-            </ul>
-            <a href="#" class="addition__button button"><span>Заказать</span></a>
-          </li>
-          <li class="additives__item addition">
-            <h3 class="addition__title"><a href="">Молоко</a></h3>
-            <ul class="addition__list">
-              <li class="addition__unit">1 литр</li>
-              <li class="addition__cost">100 Р.</li>
-            </ul>
-            <a href="#" class="addition__button button"><span>Заказать</span></a>
-          </li>
-          <li class="additives__item">
-            <h3 class="addition__title"><a href="">Витамины</a></h3>
-            <ul class="addition__list">
-              <li class="addition__unit">1 упаковка (30 г)</li>
-              <li class="addition__cost">300 Р.</li>
-            </ul>
-            <a href="#" class="addition__button button"><span>Заказать</span></a>
-          </li>
-        </ul>
-        <div class="additives__special-offer special-offer">
-          <img class="special-offer__image" src="../img/icon-gift.svg" width="55" height="60" alt="gift">
-          <p class="special-offer__text">Закажите все<br> и получите чехол для кота в подарок!</p>
+        <h2 class="additives__title"><span>Дополнительные товары</span></h2>
+        <div class="additives__wrapper">
+          <ul class="additives__list">
+            <li class="additives__item addition">
+              <h3 class="addition__title"><a href="">Сахарозаменитель</a></h3>
+              <ul class="addition__list">
+                <li class="addition__unit">1 упаковка (100 г)</li>
+                <li class="addition__cost">100 Р.</li>
+              </ul>
+              <a href="#" class="addition__button button"><span>Заказать</span></a>
+            </li>
+            <li class="additives__item addition">
+              <h3 class="addition__title"><a href="">Питьевая вода</a></h3>
+              <ul class="addition__list">
+                <li class="addition__unit">5 литров</li>
+                <li class="addition__cost">50 Р.</li>
+              </ul>
+              <a href="#" class="addition__button button"><span>Заказать</span></a>
+            </li>
+            <li class="additives__item addition">
+              <h3 class="addition__title"><a href="">Молоко</a></h3>
+              <ul class="addition__list">
+                <li class="addition__unit">1 литр</li>
+                <li class="addition__cost">100 Р.</li>
+              </ul>
+              <a href="#" class="addition__button button"><span>Заказать</span></a>
+            </li>
+            <li class="additives__item">
+              <h3 class="addition__title"><a href="">Витамины</a></h3>
+              <ul class="addition__list">
+                <li class="addition__unit">1 упаковка (30 г)</li>
+                <li class="addition__cost">300 Р.</li>
+              </ul>
+              <a href="#" class="addition__button button"><span>Заказать</span></a>
+            </li>
+          </ul>
+          <div class="additives__special-offer special-offer">
+            <img class="special-offer__image" src="../img/icon-gift.svg" width="55" height="60" alt="gift">
+            <p class="special-offer__text">Закажите все<br> и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </section>
 
       <section class="map" id="map">

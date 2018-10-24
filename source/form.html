@@ -7,13 +7,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="index.html">
-        <img src="../img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
-      </a>
-
-      <nav class="navigation">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo logo">
+          <img class="logo_image" src="../img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
+        </a>
         <button class="navigation__toggle" type="button">Открыть/закрыть меню</button>
-        <ul class="navigation__list">
+      </div>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
           <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
           <li class="navigation__item"><a class="navigation__link  navigation__link--current">Подбор программы</a></li>
@@ -59,40 +61,46 @@
         </div>
 
         <div class="form-selection__item">
-          <h2 class="form-selection__subtitle">Контактные данные (владельца кота)</h2>
-          <p>
-            <label class="form-selection__label" for="email">E-mail:*</label>
-            <input class="form-selection__input" id="email" name="email" type="email" value="kuklachev@gmail.com">
-          </p>
-          <p>
-            <label class="form-selection__label" for="phone">Телефон:*</label>
-            <input class="form-selection__input" id="phone" name="phone" type="tel" value="8 (960) 900-60-90">
-          </p>
+          <h2 class="form-selection__subtitle"><span>Контактные данные (владельца кота)</span></h2>
+          <div class="form-selection__wrapper">
+            <p>
+              <label class="form-selection__label" for="email">E-mail:*</label>
+              <input class="form-selection__input" id="email" name="email" type="email" value="kuklachev@gmail.com">
+            </p>
+            <p>
+              <label class="form-selection__label" for="phone">Телефон:*</label>
+              <input class="form-selection__input" id="phone" name="phone" type="tel" value="8 (960) 900-60-90">
+            </p>
+          </div>
         </div>
 
         <div class="form-selection__item">
-          <h2 class="form-selection__subtitle">Комментарий</h2>
-          <textarea class="form-selection__textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
+          <h2 class="form-selection__subtitle"><span>Комментарий</span></h2>
+          <div class="form-selection__wrapper">
+            <textarea class="form-selection__textarea" rows="8" cols="80" name="comment">Расскажите обо всех повадках кота</textarea>
+          </div>
         </div>
 
         <div class="form-selection__item">
-          <h2 class="form-selection__subtitle">Дополнительно</h2>
-          <p>
-            <input class="form-selection__input--checkbox" id="sweetener" name="sweetener" type="checkbox" checked>
-            <label class="form-selection__label form-selection__label--checkbox" for="sweetener">Сахарозаменитель</label>
-          </p>
-          <p>
-            <input class="form-selection__input--checkbox" id="drinking-water" name="drinking-water" type="checkbox">
-            <label class="form-selection__label form-selection__label--checkbox" for="drinking-water">Питьевая вода</label>
-          </p>
-          <p>
-            <input class="form-selection__input--checkbox" id="milk" name="milk" type="checkbox">
-            <label class="form-selection__label form-selection__label--checkbox" for="milk">Молоко</label>
-          </p>
-          <p>
-            <input class="form-selection__input--checkbox" id="vitamins" name="vitamins" type="checkbox">
-            <label class="form-selection__label form-selection__label--checkbox" for="vitamins">Витамины</label>
-          </p>
+          <h2 class="form-selection__subtitle"><span>Дополнительно</span></h2>
+          <div class="form-selection__wrapper">
+            <p>
+              <input class="form-selection__input--checkbox" id="sweetener" name="sweetener" type="checkbox" checked>
+              <label class="form-selection__label form-selection__label--checkbox" for="sweetener">Сахарозаменитель</label>
+            </p>
+            <p>
+              <input class="form-selection__input--checkbox" id="drinking-water" name="drinking-water" type="checkbox">
+              <label class="form-selection__label form-selection__label--checkbox" for="drinking-water">Питьевая вода</label>
+            </p>
+            <p>
+              <input class="form-selection__input--checkbox" id="milk" name="milk" type="checkbox">
+              <label class="form-selection__label form-selection__label--checkbox" for="milk">Молоко</label>
+            </p>
+            <p>
+              <input class="form-selection__input--checkbox" id="vitamins" name="vitamins" type="checkbox">
+              <label class="form-selection__label form-selection__label--checkbox" for="vitamins">Витамины</label>
+            </p>
+          </div>
         </div>
 
         <div class="form-selection__item">
@@ -102,9 +110,11 @@
       </form>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </section>
 
       <section class="map" id="map">

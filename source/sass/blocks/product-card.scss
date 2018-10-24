@@ -1,4 +1,5 @@
 .product-card {
+  box-sizing: border-box;
   padding: 25px 20px;
 }
 
@@ -8,6 +9,7 @@
 
 .product-card__title {
   font-size: 16px;
+  font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -17,7 +19,7 @@
 }
 
 .product-card__table {
-  font-family: "Arial", sans-serif;
+  font-family: $font-small-text;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -38,7 +40,7 @@
 .product-card__subtext {
   margin: 0;
   margin-bottom: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: $font-small-text;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
