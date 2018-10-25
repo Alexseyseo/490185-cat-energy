@@ -1,0 +1,80 @@
+.form-selection {
+  padding-bottom: 30px;
+}
+
+.form-selection__wrapper {
+  @include container;
+  padding: 0 20px;
+}
+
+.form-selection__item {
+  margin-bottom: 25px;
+
+  & p {
+    margin: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--radio-box {
+    box-sizing: border-box;
+    padding: 20px 0;
+    border: 1px solid #ededed;
+
+    & p {
+      padding: 0 20px;
+    }
+  }
+}
+
+.form-selection__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-selection__input {
+  padding: 15px;
+  box-sizing: border-box;
+  height: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}
+
+.form-selection__subtitle {
+  @include container;
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-right: 80px;
+  /* Зеленую полосу добавлю через псевдоэлемент */
+}
+
+.form-selection__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}
+
+.form-selection__button {
+  width: 100%;
+  margin: 35px 0 25px 0;
+}
+
+.form-selection__text {
+  font-family: $font-small-text;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+}

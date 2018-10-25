@@ -1,0 +1,36 @@
+.before-after {
+  background-color: #f2f2f2;
+  //
+}
+
+.before-after__wrapper {
+  @include container;
+  padding: 30px 20px;
+}
+
+.before-after__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.before-after__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: $font-small-text;
+}
+
+.before-after__result {
+  margin-bottom: 35px;
+}
+
+.before-after__cost {
+  margin: 0;
+  margin-bottom: 45px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

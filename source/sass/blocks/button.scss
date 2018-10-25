@@ -1,0 +1,34 @@
+.button {
+  box-sizing: border-box;
+  background-color: #68b738;
+  color: #ffffff;
+  padding: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &--more {
+    background-color: #f2f2f2;
+    color: #444444;
+  }
+
+  &--more:hover,
+  &--more:focus,
+  &--more:active {
+    background-color: #ebebeb;
+  }
+
+  &--more:active span {
+    opacity: 0.3;
+  }
+}

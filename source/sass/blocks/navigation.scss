@@ -1,0 +1,36 @@
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__toggle {
+  /* Декоративную кнопку допишу когда будем делать декоративные элементы, думаю ее сделать полностью на CSS */
+}
+
+.navigation__item {
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.navigation__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #111111;
+
+  &:hover,
+  &:focus {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
+  &--current {
+    border-bottom: 2px solid #68b738;
+  }
+}

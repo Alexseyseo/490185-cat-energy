@@ -1,0 +1,14 @@
+.page-main__title {
+  @include container;
+  padding: 20px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 60px;
+}
+
+.page-main__desc {
+  @include container;
+  padding: 0 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+.page-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__wrapper {
+  @include container;
+}
