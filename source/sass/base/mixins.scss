@@ -1,6 +1,22 @@
 @mixin container {
   box-sizing: border-box;
   margin: 0 auto;
-  width: 100%;
-  max-width: 320px;
+  padding: 0 20px;
+  width: $mobile-width;
+}
+
+@mixin container-tablet {
+  width: $tablet-width;
+  padding: 0 30px;
+}
+
+@mixin container-desktop {
+  width: $desktop-width;
+  padding: 0 110px;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

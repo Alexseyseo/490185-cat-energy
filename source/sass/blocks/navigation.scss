@@ -1,20 +1,45 @@
-.navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media (min-width: $tablet-width) {
+  .navigation {
+    width: 440px;
+    margin-top: 42px;
+  }
 }
 
-.navigation__toggle {
-  /* Декоративную кнопку допишу когда будем делать декоративные элементы, думаю ее сделать полностью на CSS */
+@media (min-width: $desktop-width) {
+  .navigation {
+    width: 478px;
+    margin-top: 73px;
+  }
+}
+
+.navigation__list {
+  @include reset-list;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .navigation__item {
-  padding: 25px 20px;
-  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 20px;
   border-top: 1px solid #e6e6e6;
 }
 
+@media (min-width: $tablet-width) {
+  .navigation__item {
+    padding: 0;
+    border-top: none;
+  }
+}
+
 .navigation__link {
+  font-family: $font-oswald-text;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -23,14 +48,35 @@
 
   &:hover,
   &:focus {
-    color: rgba(17, 17, 17, 0.6);
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba(17, 17, 17, 0.3);
+    opacity: 0.3;
   }
 
   &--current {
-    border-bottom: 2px solid #68b738;
+    border-bottom: 2px solid $green-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__link {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 7px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation__link {
+    font-size: 20px;
+    padding: 7px 0;
+    color: #ffffff;
+
+    &--current {
+      border-bottom-color: #ffffff;
+    }
   }
 }

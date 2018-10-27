@@ -1,7 +1,7 @@
 .intro {
   margin-bottom: 20px;
-  background-image: url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px);
+  /* background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px); Перед сборкой включить!!!!!!!!!!!!!!!!*/
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -12,14 +12,34 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    @include container-tablet;
+    padding: 0;
+    text-align: left;
+  }
+}
+
 .intro__title {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 20px;
   max-width: 370px;
   font-size: 36px;
   font-weight: 500;
   line-height: 36px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 370px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #000000;
+  }
 }
 
 .intro__description {

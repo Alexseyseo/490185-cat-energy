@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,16 +12,15 @@
         <a class="page-header__logo logo">
           <img class="logo_image" src="../img/logo-mobile.svg" width="191" height="38" alt="Cat Energy">
         </a>
-        <button class="navigation__toggle" type="button">Открыть/закрыть меню</button>
+        <button class="page-header__nav-toggle open" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
       </div>
-
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link  navigation__link--current">Главная</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
-          </ul>
-        </nav>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link  navigation__link--current">Главная</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -102,7 +102,7 @@
             </div>
             <div class="slider__range">
               <p class="slider__text">Было</p>
-              <!-- Здесь будет код для слайдера до/после, когда будет ясно как его лучше сделать -->
+
               <p class="slider__text">Стало</p>
             </div>
           </div>
