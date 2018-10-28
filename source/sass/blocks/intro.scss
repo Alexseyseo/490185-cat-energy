@@ -1,58 +1,133 @@
 .intro {
-  margin-bottom: 20px;
-  /* background-image: url("../img/index-background-mobile@1x.jpg"),
-    linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px); Перед сборкой включить!!!!!!!!!!!!!!!!*/
+  margin-bottom: 16px;
+  background-image: url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet-width) {
+  .intro {
+    background: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to left, #65a93c, #65a93c 50%, #ffffff 50%);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+
 .intro__wrapper {
   @include container;
-  padding: 30px 20px 0 20px;
+  padding-top: 27px;
+  font-family: $font-oswald-text;
   text-align: center;
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .intro__wrapper {
     @include container-tablet;
-    padding: 0;
+    position: relative;
+    padding-top: 58px;
+    padding-left: 117px;
     text-align: left;
+    color: #111111;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    @include container-desktop;
+    padding-top: 142px;
+    padding-left: 190px;
+    padding-bottom: 273px;
+    margin-top: -113px;
   }
 }
 
 .intro__title {
   margin: 0;
-  margin-bottom: 20px;
-  max-width: 370px;
+  margin-bottom: 25px;
   font-size: 36px;
-  font-weight: 500;
   line-height: 36px;
-  color: #ffffff;
+  font-weight: 400;
 }
 
 @media (min-width: $tablet-width) {
   .intro__title {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    max-width: 370px;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 36px;
-    color: #000000;
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    margin-top: 80px;
+    width: 450px;
   }
 }
 
 .intro__description {
-  margin: 0;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
-.intro__button {
-  box-sizing: border-box;
+@media (min-width: $tablet-width) {
+  .intro__description {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.intro__image {
   display: block;
-  margin: 0 auto;
-  max-width: 320px;
+  width: 280px;
+  height: 271px;
+  margin-bottom: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__image {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__image {
+    position: absolute;
+    top: 142px;
+    right: 300px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__button {
+    position: absolute;
+    top: 287px;
+    margin-left: 2px;
+    padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__button {
+    top: 456px;
+    margin-left: 0;
+  }
 }
