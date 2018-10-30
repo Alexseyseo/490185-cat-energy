@@ -6,12 +6,14 @@
   width: 100%;
   min-height: 362px;
 }
+
 @media (min-width: $tablet-width) {
   .map {
     background-image: url("../img/bg-map-tablet@1x.png");
     min-height: 396px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .map {
     background-image: url("../img/bg-map-desktop@1x.png");

@@ -16,22 +16,27 @@
   width: $mobile-width;
   margin: 0 auto;
 }
+
 @mixin container-tablet {
   box-sizing: border-box;
   width: $tablet-width;
   margin: 0 auto;
 }
+
 @mixin container-desktop {
   box-sizing: border-box;
   width: $desktop-width;
   margin: 0 auto;
 }
+
 @mixin padding-container-mobile {
   padding: 0 20px;
 }
+
 @mixin padding-container-tablet {
   padding: 0 30px;
 }
+
 @mixin padding-container-desktop {
   padding: 0 110px;
 }

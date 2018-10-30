@@ -1,80 +1,63 @@
-.form-selection {
-  padding-bottom: 30px;
-}
-
-.form-selection__wrapper {
-  @include container;
-  padding: 0 20px;
-}
-
 .form-selection__item {
-  margin-bottom: 25px;
+  @include container-mobile;
+  @include padding-container-mobile;
+  margin-bottom: 28px;
 
-  & p {
-    margin: 0;
-    margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &--name {
+    margin-bottom: 23px;
   }
 
-  &--radio-box {
-    box-sizing: border-box;
-    padding: 20px 0;
+  &--radio {
+    padding-top: 20px;
+    padding-left: 19px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     border: 1px solid #ededed;
-
-    & p {
-      padding: 0 20px;
-    }
   }
-}
 
-.form-selection__label {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+  &--textarea {
+    margin-bottom: 24px;
+  }
 
-.form-selection__input {
-  padding: 15px;
-  box-sizing: border-box;
-  height: 45px;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  &--checkbox,
+  &--submit {
+    margin-bottom: 33px;
+  }
 }
 
 .form-selection__subtitle {
-  @include container;
-  padding: 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
   margin-top: 0;
-  margin-bottom: 30px;
-  padding-right: 80px;
-  /* Зеленую полосу добавлю через псевдоэлемент */
-}
+  margin-bottom: 34px;
+  font-family: $font-oswald-text;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
 
-.form-selection__textarea {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 15px;
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    background-color: #68b738;
+  }
+
+  span {
+    @include container-mobile;
+    @include padding-container-mobile;
+    position: relative;
+    background-color: #ffffff;
+  }
 }
 
 .form-selection__button {
-  width: 100%;
-  margin: 35px 0 25px 0;
-}
-
-.form-selection__text {
-  font-family: $font-arial-text;
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
-  text-align: center;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 20px;
 }

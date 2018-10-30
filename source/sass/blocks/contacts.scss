@@ -13,12 +13,14 @@
   padding: 29px 20px 25px;
   line-height: 20px;
 }
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     @include container-tablet;
     padding: 65px 70px 56px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
     box-sizing: border-box;
@@ -29,8 +31,10 @@
     top: 95px;
     right: calc(50% + 40px);
     background-color: #ffffff;
+    z-index: 1;
   }
 }
+
 .contacts__invite {
   width: 140px;
   flex-shrink: 0;
@@ -40,6 +44,7 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
 @media (min-width: $tablet-width) {
   .contacts__invite {
     width: 200px;
@@ -47,15 +52,13 @@
     line-height: 25px;
   }
 }
-@media (min-width: $desktop-width) {
-
-}
 
 .contacts__address {
   margin: 0;
   font-size: 14px;
   color: #444444;
 }
+
 @media (min-width: $tablet-width) {
   .contacts__address {
     width: 165px;
@@ -69,6 +72,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .contacts__address {
     text-align: left;
