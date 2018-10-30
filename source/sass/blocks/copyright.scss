@@ -1,4 +1,5 @@
 .copyright {
+  display: flex;
   text-align: center;
 }
 
@@ -6,11 +7,13 @@
   color: #444444;
   font-size: 16px;
   line-height: 16px;
+  margin-right: auto;
+  padding-top: 8px;
 }
 
 .copyright__image {
   display: inline-block;
   vertical-align: middle;
-  width: 26px;
-  height: 36px;
+  width: 27px;
+  height: 34px;
 }
