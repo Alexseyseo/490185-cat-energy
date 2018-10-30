@@ -1,3 +1,15 @@
+@media (min-width: $tablet-width) {
+  .form-selection__wrapper {
+    @include container-tablet;
+  }
+}
+@media (min-width: $desktop-width) {
+  .form-selection__wrapper {
+    @include container-desktop;
+    display: flex;
+  }
+}
+
 .form-selection__item {
   @include container-mobile;
   @include padding-container-mobile;
@@ -22,6 +34,42 @@
   &--checkbox,
   &--submit {
     margin-bottom: 33px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .form-selection__item {
+    @include container-tablet;
+    padding: 0 70px;
+    margin-bottom: 65px;
+
+    &--name {
+      margin-bottom: 72px;
+    }
+
+    &--radio {
+      width: 630px;
+      padding: 25px 30px;
+      margin-bottom: 73px;
+    }
+
+    &--textarea {
+      margin-bottom: 61px;
+    }
+
+    &--checkbox,
+    &--submit {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &--checkbox {
+      margin-bottom: 22px;
+    }
+
+    &--submit {
+      margin-bottom: 51px;
+    }
   }
 }
 
@@ -53,6 +101,22 @@
     background-color: #ffffff;
   }
 }
+@media (min-width: $tablet-width) {
+  .form-selection__subtitle {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    span {
+      @include container-tablet;
+      padding: 0 70px;
+    }
+
+    &--add {
+      margin-bottom: 57px;
+    }
+  }
+}
 
 .form-selection__button {
   width: 280px;
@@ -60,4 +124,12 @@
   margin-bottom: 21px;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-selection__button {
+    width: 283px;
+    height: 52px;
+    font-size: 20px;
+  }
 }
