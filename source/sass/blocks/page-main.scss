@@ -20,7 +20,8 @@
 @media (min-width: $desktop-width) {
   .page-main__title {
     @include container-desktop;
-    padding: 0 110px;
+    padding: 74px 110px 0;
+    margin-bottom: 56px;
   }
 }
 
@@ -46,6 +47,8 @@
 @media (min-width: $desktop-width) {
   .page-main__desc {
     @include container-desktop;
-    padding: 0 110px;
+    padding-left: 110px;
+    padding-right: 950px;
+    margin-bottom: 66px;
   }
 }

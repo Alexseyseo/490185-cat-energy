@@ -77,6 +77,9 @@
 @media (min-width: $desktop-width) {
   .navigation__link {
     font-size: 20px;
+  }
+
+  .index-page .navigation__link {
     color: #ffffff;
 
     &--current {
