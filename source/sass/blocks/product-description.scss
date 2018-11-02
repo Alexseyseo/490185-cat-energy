@@ -1,9 +1,35 @@
 .product-description {
-  & th {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  border-collapse: collapse;
+  width: 100%;
+  border: 0;
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  th {
+    padding: 0;
+    font-weight: 400;
     text-align: left;
   }
 
-  & td {
+  td {
+    padding: 0;
     text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-description {
+    font-size: 16px;
+
+    tr {
+      padding: 8px 0;
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }

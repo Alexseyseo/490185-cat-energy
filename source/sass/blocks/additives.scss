@@ -1,29 +1,38 @@
-.additives__wrapper {
-  @include container;
-  padding: 0 20px;
+.additives {
+  @include container-mobile;
 }
 
 .additives__title {
-  /* Зеленую линию планирую добавить псевдоэлементом */
-  @include container;
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+
+  span {
+    @include container-mobile;
+    padding: 0 20px;
+    font-family: $font-oswald-text;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.additives__wrapper {
+  width: 280px;
   padding: 0 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 24px;
+  padding-bottom: 35px;
 }
 
 .additives__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
+  border-top: 1px solid #cdcdcd;
+  margin-bottom: 39px;
 }
 
 .additives__special-offer {
   box-sizing: border-box;
-  margin: 35px 0;
-  padding: 65px 55px 35px 55px;
+  padding: 66px 55px 41px 55px;
+  background-color: #67ab3e;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -31,13 +40,54 @@
 }
 
 .special-offer__image {
-  margin-bottom: 65px;
+  width: 55px;
+  height: 60px;
+  margin-bottom: 59px;
 }
 
 .special-offer__text {
   margin: 0;
-  font-family: $font-arial-text;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .additives {
+    @include container-tablet;
+    padding-bottom: 75px;
+  }
+
+  .additives__title span {
+    @include container-tablet;
+  }
+
+  .additives__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .additives__special-offer {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    padding-top: 65px;
+    padding-left: 115px;
+    padding-right: 91px;
+    padding-bottom: 65px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: cover;
+    text-align: center;
+  }
+
+  .special-offer__image {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .special-offer__text {
+    width: 170px;
+    text-align: left;
+  }
 }
