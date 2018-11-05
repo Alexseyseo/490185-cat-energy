@@ -20,7 +20,6 @@
 
 .addition__list {
   @include reset-list;
-  margin-bottom: 13px;
   display: flex;
   font-size: 14px;
   line-height: 14px;
@@ -32,6 +31,8 @@
 }
 
 .addition__button {
+  width: 100%;
+  margin-top: 15px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -47,6 +48,8 @@
   }
 
   .addition__title {
+    width: 285px;
+    margin: 0;
     margin-right: auto;
   }
 
@@ -59,9 +62,24 @@
     width: 95px;
     text-align: right;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .addition {
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0;
+  }
+
+  .addition__list {
+    width: 285px;
+    margin: 0;
+  }
 
   .addition__button {
-    width: 100%;
-    margin-top: auto;
+    width: 245px;
+    margin: 0;
+    margin-left: 40px;
   }
 }

@@ -158,3 +158,31 @@
     margin-top: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+    padding: 0 38px;
+    padding-bottom: 35px;
+
+    &--more {
+      padding-top: 164px;
+    }
+  }
+
+  .product-card__title {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .product-card__text {
+    margin-bottom: 0;
+    padding: 0 10px;
+  }
+
+  .product-card__subtext {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
