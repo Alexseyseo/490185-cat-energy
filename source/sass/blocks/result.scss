@@ -1,17 +1,109 @@
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .result__item {
+  width: 124px;
+  margin-bottom: 15px;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   text-align: center;
 }
 
 .result__value {
-  margin: 15px 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: $font-oswald-text;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .result__desc {
-  margin: 0;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: -12px;
   font-size: 12px;
   line-height: 12px;
+  background-color: #f2f2f2;
+  color: #444444;
+}
+
+.result__cost {
+  font-family: $font-oswald-text;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .result {
+    align-items: center; // для выравнивания цены, возможно достаточно задать align-self для элемента цены?
+  }
+
+  .result__item {
+    width: 160px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .result__value {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .result__desc {
+    width: 140px; // надо будет переработать(для пп), пока не придумал как
+    margin: 0 auto;
+    margin-bottom: -7px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  .result__cost {
+    width: 192px;
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+
+    span {
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    width: 366px;
+  }
+
+  .result__item {
+    width: 160px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .result__desc {
+    background-color: #f2f2f2;
+  }
+
+  .result__cost {
+    width: auto;
+    text-align: left;
+
+    span {
+      margin-top: 0;
+      margin-left: 65px;
+    }
+  }
 }
