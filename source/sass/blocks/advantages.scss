@@ -45,6 +45,10 @@
 
   .advantages__wrapper {
     @include container-desktop;
-    padding: 0 70px;
+    padding: 0;
+  }
+
+  .advantages__title {
+    padding: 0 40px;
   }
 }

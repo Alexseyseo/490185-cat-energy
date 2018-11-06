@@ -27,6 +27,7 @@
   box-sizing: border-box;
   width: $desktop-width;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 @mixin padding-container-mobile {
@@ -35,8 +36,4 @@
 
 @mixin padding-container-tablet {
   padding: 0 30px;
-}
-
-@mixin padding-container-desktop {
-  padding: 0 110px;
 }
