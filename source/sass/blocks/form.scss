@@ -151,7 +151,7 @@
   top: 3px;
   width: 13px;
   height: 19px;
-  border: solid #68b738;
+  border: solid $green-color;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -162,17 +162,15 @@
     top: 7px;
     width: 13px;
     height: 19px;
-    border: solid #68b738;
+    border: solid $green-color;
     border-width: 0 2px 2px 0;
   }
 }
 
 .form__input--radio:checked + .form__label--radio::after {
-  background-color: #68b738;
+  background-color: $green-color;
 }
 
-// В стайлгайде нет disabled кнопки, сделал ее такой же как при active
-// Не разобрался как избавится от глюка, когда при перемещении клавиатурой по  радиокнопкам и нажатии выбора(пробела) к ним не возврщается opacity 1 при отпуске кнопки
 .form__input--radio:active + .form__label--radio,
 .form__input--radio:disabled + .form__label--radio,
 .form__input--checkbox:active + .form__label--checkbox,
@@ -242,7 +240,7 @@
 }
 
 .form__input--text:focus + .form__input-icon path {
-  fill: #68b738;
+  fill: $green-color;
 }
 
 .form__textarea {

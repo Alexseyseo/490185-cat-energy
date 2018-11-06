@@ -1,8 +1,16 @@
-@mixin container {
+@mixin container { // старый миксин оставлю до полного рефакторинга кода
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
   width: $mobile-width;
+}
+
+@mixin padding-container-mobile { // старый миксин оставлю до полного рефакторинга кода
+  padding: 0 20px;
+}
+
+@mixin padding-container-tablet { // старый миксин оставлю до полного рефакторинга кода
+  padding: 0 30px;
 }
 
 @mixin reset-list {
@@ -28,12 +36,4 @@
   width: $desktop-width;
   margin: 0 auto;
   padding: 0 40px;
-}
-
-@mixin padding-container-mobile {
-  padding: 0 20px;
-}
-
-@mixin padding-container-tablet {
-  padding: 0 30px;
 }
