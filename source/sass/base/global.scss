@@ -1,8 +1,7 @@
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  /* Ширина временно для стилизации мобильной версии */
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-arial-text;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;

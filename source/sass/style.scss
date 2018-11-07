@@ -1,7 +1,7 @@
 /* Global styles */
-@import "base/fonts.scss";
 @import "base/variables.scss";
 @import "base/mixins.scss";
+@import "base/fonts.scss";
 @import "base/global.scss";
 @import "blocks/button.scss";
 /* Header styles */
@@ -24,8 +24,10 @@
 @import "blocks/product-description.scss";
 @import "blocks/additives.scss";
 @import "blocks/addition.scss";
+@import "blocks/special-offer.scss";
 /* Form styles */
 @import "blocks/form-selection.scss";
+@import "blocks/form.scss";
 /* Bottom page-main site styles */
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";

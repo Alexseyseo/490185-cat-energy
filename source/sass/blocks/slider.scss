@@ -1,6 +1,141 @@
+.slider {
+  @include container-mobile;
+}
+
+.slider__image {
+  display: flex;
+  width: 320px;
+  height: 240px;
+  margin-bottom: 35px;
+
+  img {
+    margin: auto;
+  }
+}
+
+.slider__range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .slider__text {
   margin: 0;
+  font-family: $font-oswald-text;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.slider__controls {
+  position: relative;
+  flex-shrink: 0;
+  width: 84px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slider__scale {
+  box-sizing: border-box;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 7px;
+}
+
+.slider__bar {
+  margin: 3px 5px;
+  width: 50%;
+  height: 6px;
+  background-color: $green-color;
+  border-radius: 3px;
+}
+
+.slider__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: auto;
+  }
+
+  .slider__image {
+    width: 768px;
+    height: 517px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .slider__text {
+    font-size: 20px;
+    padding: 7px 0;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .slider__controls {
+    width: 428px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .slider__scale {
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .slider__bar {
+    display: none;
+  }
+
+  .slider__toggle {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    box-sizing: border-box;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -4px;
+      margin-left: -4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $green-color;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $green-color;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 690px;
+    margin: 0;
+    margin-left: 130px;
+    margin-right: auto;
+  }
+
+  .slider__image {
+    width: 690px;
+    margin-bottom: 30px;
+  }
 }

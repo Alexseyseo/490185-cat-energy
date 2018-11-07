@@ -1,0 +1,59 @@
+.special-offer {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 289px;
+  padding: 65px 55px 40px;
+  text-align: center;
+}
+
+.special-offer__image {
+  width: 55px;
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+.special-offer__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .special-offer {
+    display: flex;
+    align-items: center;
+    width: 708px;
+    min-height: 200px;
+    padding: 0 90px;
+  }
+
+  .special-offer__image {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .special-offer__text {
+    width: 170px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .special-offer {
+    flex-direction: column;
+    justify-content: center;
+    width: 245px;
+    min-height: 289px;
+    padding: 65px 35px 40px;
+  }
+
+  .special-offer__image {
+    margin: 0;
+    margin-bottom: 65px;
+  }
+
+  .special-offer__text {
+    text-align: center;
+  }
+}

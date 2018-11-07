@@ -1,8 +1,129 @@
-.page-header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e6e6e6;
+.page-header__wrapper {
+  @include container-mobile;
+  display: flex;
+  padding: 0 20px;
+  padding-top: 11px;
+  padding-bottom: 16px;
 }
 
-.page-header__wrapper {
-  @include container;
+.page-header__logo {
+  display: block;
+  width: 191px;
+  height: 38px;
+  margin-right: auto;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__nav-toggle {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  // Ограничим стилизацию меню на мобильном разрешении
+  .page-header__nav-toggle {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 12px;
+    padding: 0;
+    width: 24px;
+    height: 18px;
+    border: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .page-header__nav-toggle--closed::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #222222;
+    box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
+  }
+
+  .page-header__nav-toggle--opened {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 24px;
+      height: 2px;
+      background-color: #222222;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .page-header__navigation--closed {
+    display: none;
+  }
+
+  .page-header__nav-toggle--nojs {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    @include container-tablet;
+    position: relative;
+    display: flex;
+    padding: 0 30px;
+    padding-top: 24px;
+    z-index: 2;
+  }
+
+  .page-header__wrapper {
+    display: block;
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .page-header__logo {
+    width: 173px;
+    height: 58px;
+  }
+
+  .page-header__navigation {
+    width: 510px;
+    padding-top: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    @include container-desktop;
+    padding-top: 54px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+  }
+
+  .page-header__navigation {
+    width: 570px;
+    padding-top: 22px;
+  }
 }

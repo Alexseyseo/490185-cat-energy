@@ -1,5 +1,10 @@
+.catalog {
+  @include container-mobile;
+  margin-bottom: 28px;
+}
+
 .catalog__list {
-  @include container;
+  margin: 0;
   padding: 0;
   list-style: none;
   border-top: 1px solid #ededed;
@@ -8,4 +13,42 @@
 .catalog__item {
   border: 1px solid #ededed;
   border-top: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    @include container-tablet;
+    margin-bottom: 70px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .catalog__item {
+    border: none;
+    margin-top: 85px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    @include container-desktop;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .catalog__list {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .catalog__item {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }

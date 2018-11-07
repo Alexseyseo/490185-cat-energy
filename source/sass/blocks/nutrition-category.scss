@@ -1,29 +1,26 @@
 .nutrition-category {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .nutrition-category__wrapper {
-  @include container;
+  @include container-mobile;
   padding: 0 20px;
 }
 
 .nutrition-category__item {
-  box-sizing: border-box;
+  position: relative;
   background-color: #f2f2f2;
   padding: 20px;
   margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .nutrition-category__wrapper-image {
-  position: relative;
+  position: absolute;
   width: 50px;
   height: 50px;
-  margin-right: 20px;
-  background-color: #68b738;
+  top: 25px;
+  left: 22px;
+  background-color: $green-color;
   border-radius: 50%;
 }
 
@@ -32,41 +29,44 @@
   max-width: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
 }
 
 .nutrition-category__title {
   margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  font-family: $font-oswald-text;
   font-size: 24px;
-  font-weight: 500;
-  line-height: 37px;
+  font-weight: 400;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
 .nutrition-category__desc {
-  /* В макетах точно нет ошибок, все "абзацы" сделаны Arial хотя основной Oswald, и когда шрифт популярный все равно надо указывать три шрифта или достаточно двух */
-  font-family: $font-small-text;
-  color: #444444;
   margin: 0;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  color: #444444;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nutrition-category__link {
   position: relative;
+  font-family: $font-oswald-text;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #111111;
 
   &::after {
-    position: absolute;
-    top: 7px;
-    margin-left: 14px;
     content: "";
+    position: absolute;
     width: 24px;
     height: 11px;
+    top: 7px;
+    margin-left: 15px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
@@ -79,5 +79,110 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition-category {
+    margin-bottom: 55px;
+  }
+
+  .nutrition-category__wrapper {
+    @include container-tablet;
+    padding: 0 30px;
+  }
+
+  .nutrition-category__item {
+    padding-top: 80px;
+    padding-left: 55px;
+    padding-right: 280px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+
+    &--pro {
+      padding-right: 310px;
+    }
+  }
+
+  .nutrition-category__wrapper-image {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: auto;
+    right: 62px;
+  }
+
+  .nutrition-category__image {
+    transform: scale(4) translate(-15%, -20%);
+  }
+
+  .nutrition-category__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 0;
+    font-size: 36px;
+  }
+
+  .nutrition-category__desc {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+    padding: 0;
+    border: none;
+  }
+
+  .nutrition-category__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      margin-left: 25px;
+      top: 11px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition-category {
+    margin-bottom: 80px;
+  }
+
+  .nutrition-category__wrapper {
+    @include container-desktop;
+    display: flex;
+    padding: 0;
+  }
+
+  .nutrition-category__item {
+    width: 570px;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    margin: 40px;
+    margin-top: 0;
+  }
+
+  .nutrition-category__wrapper-image {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+    right: auto;
+  }
+
+  .nutrition-category__image {
+    transform: scale(2) translate(-25%, -30%);
+  }
+
+  .nutrition-category__title {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding-left: 160px;
+  }
+
+  .nutrition-category__desc {
+    margin-bottom: 25px;
   }
 }

@@ -1,12 +1,87 @@
+// Для реализации счетчика блоков необходимо в обертке данных блоков инициализировать счетчик
+// counter-reset: advantage-counter; // - инициализация счетчика
+
+.advantage {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .advantage__image {
   box-sizing: border-box;
+  flex-shrink: 0;
   width: 60px;
   height: 60px;
-  padding-left: 5px;
-  padding-top: 5px;
-  background-color: #68b738;
+  margin-right: 20px;
+  padding: 5px;
+  background-color: $green-color;
 }
 
 .advantage__text {
-  font-family: $font-small-text;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  // Еще не разобрался с нижнима отступом, надо пересчитать его, блокам прийдется верхний и нижний отступ задавать
+  .advantage {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 324px;
+    min-height: 336px;
+    padding-right: 70px;
+    counter-increment: advantage-counter;
+    margin-bottom: 80px;
+
+    &:nth-child(even) {
+      margin-right: 60px;
+    }
+
+    &::before {
+      content: counter(advantage-counter);
+      position: absolute;
+      top: 110px;
+      left: 123px;
+      display: block;
+      font-family: $font-oswald-text;
+      font-size: 336px;
+      height: 336px;
+      color: #f2f2f2;
+    }
+  }
+
+  .advantage__image {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 15px;
+  }
+
+  .advantage__text {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage {
+    width: 245px;
+    padding-right: 0;
+    margin: 0 40px;
+    // пришлось сбрасывать псевдокласс принудительно
+    &:nth-child(even) {
+      margin-right: 40px;
+    }
+  }
 }

@@ -1,6 +1,39 @@
-@mixin container {
+@mixin container { // старый миксин оставлю до полного рефакторинга кода
   box-sizing: border-box;
   margin: 0 auto;
-  width: 100%;
-  max-width: 320px;
+  padding: 0 20px;
+  width: $mobile-width;
+}
+
+@mixin padding-container-mobile { // старый миксин оставлю до полного рефакторинга кода
+  padding: 0 20px;
+}
+
+@mixin padding-container-tablet { // старый миксин оставлю до полного рефакторинга кода
+  padding: 0 30px;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container-mobile {
+  box-sizing: border-box;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@mixin container-tablet {
+  box-sizing: border-box;
+  width: $tablet-width;
+  margin: 0 auto;
+}
+
+@mixin container-desktop {
+  box-sizing: border-box;
+  width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 40px;
 }
