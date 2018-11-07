@@ -1,16 +1,17 @@
 .before-after {
   background-color: #f2f2f2;
-  padding-bottom: 35px;
+  padding-bottom: 36px;
 }
 
 .before-after__wrapper {
   @include container-mobile;
-  padding: 20px 20px;
+  padding: 0 20px;
+  padding-top: 18px;
 }
 
 .before-after__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-family: $font-oswald-text;
   font-size: 36px;
   font-weight: 400;
@@ -27,7 +28,7 @@
 }
 
 .before-after__result {
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -38,28 +39,28 @@
 
   .before-after__wrapper {
     @include container-tablet;
-    padding: 50px 30px 60px;
+    padding: 0 30px 60px;
   }
 
   .before-after__title {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
     font-size: 60px;
   }
 
   .before-after__desc {
-    margin-bottom: 45px;
+    margin-bottom: 53px;
     padding: 0;
     font-size: 16px;
     line-height: 24px;
   }
 
   .before-after__result {
-    margin-bottom: 75px;
+    margin-bottom: 25px;
   }
 
   .before-after__slider {
     background-image: linear-gradient(#ffffff, #ffffff 170px, #f2f2f2 170px);
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 }
 
@@ -67,7 +68,7 @@
   .before-after {
     display: flex;
     width: auto;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     background-image: linear-gradient(#ffffff, #ffffff 190px, #f2f2f2 190px);
   }
 
@@ -81,13 +82,13 @@
 
   .before-after__title {
     width: 435px;
-    margin-top: 60px;
-    margin-bottom: 140px;
+    margin-top: 55px;
+    margin-bottom: 146px;
   }
 
   .before-after__desc {
     width: 435px;
-    margin-bottom: 60px;
+    margin-bottom: 68px;
     font-size: 16px;
     line-height: 24px;
   }

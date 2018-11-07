@@ -36,10 +36,11 @@
     position: relative;
     display: block;
     width: 324px;
-    min-height: 336px;
+    min-height: 228px;
     padding-right: 70px;
     counter-increment: advantage-counter;
-    margin-bottom: 80px;
+    margin-top: 38px;
+    margin-bottom: 51px;
 
     &:nth-child(even) {
       margin-right: 60px;
@@ -48,12 +49,12 @@
     &::before {
       content: counter(advantage-counter);
       position: absolute;
-      top: 110px;
-      left: 123px;
+      top: 92px;
+      left: 115px;
       display: block;
       font-family: $font-oswald-text;
-      font-size: 336px;
-      height: 336px;
+      font-size: 281px;
+      height: 281px;
       color: #f2f2f2;
     }
   }
@@ -62,7 +63,7 @@
     width: 80px;
     height: 80px;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     padding: 15px;
   }
 
