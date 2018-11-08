@@ -87,7 +87,7 @@
 
   .intro__button {
     position: relative;
-    width: 245px;
+    width: 246px;
     margin-left: 89px;
     padding: 16px 27px;
     font-size: 20px;
@@ -102,7 +102,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to left, #65a93c, #65a93c 50%, #ffffff 50%);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: calc(50% + 359px) 100%;
   }
 
   .intro__wrapper {
