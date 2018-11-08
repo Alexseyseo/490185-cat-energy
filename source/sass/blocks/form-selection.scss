@@ -29,8 +29,9 @@
 }
 
 .form-selection__subtitle {
-  //@include container-mobile;
-  position: relative;
+  display: flex;
+  max-width: 100%;
+  margin: 0;
   margin-bottom: 34px;
   padding: 0;
   font-family: $font-oswald-text;
@@ -50,19 +51,15 @@
   &::before,
   &::after {
     content: "";
-    position: absolute;
+    flex-grow: 1;
+    position: relative;
     top: 14px;
-    width: 100%;
     height: 3px;
     background-color: $green-color;
   }
 
   &::before {
-    left: 0;
-  }
-
-  &::after {
-    right: 100%;
+    max-width: calc(50vw - 160px);
   }
 }
 
@@ -115,23 +112,25 @@
   }
 
   .form-selection__subtitle {
-    //@include container-tablet;
     margin-bottom: 76px;
-    padding: 0 30px;
     font-size: 36px;
     line-height: 36px;
+
+    span {
+      padding: 0 40px;
+    }
 
     &::before,
     &::after {
       top: 22px;
     }
 
-    br {
-      display: none;
+    &::before {
+      max-width: calc(50vw - 354px);
     }
 
-    span {
-      padding: 0 40px;
+    br {
+      display: none;
     }
 
     &--add {
@@ -195,8 +194,9 @@
   }
 
   .form-selection__subtitle {
-    //width: $desktop-width;
-    padding: 0 70px;
+    &::before {
+      max-width: calc(50vw - 650px);
+    }
   }
 
   .form-selection__button {
