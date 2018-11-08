@@ -5,7 +5,7 @@
 .additives__title {
   position: relative;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   padding: 0 20px;
 
   &::before {
@@ -65,7 +65,7 @@
   }
 
   .additives__title {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
     padding: 0 30px;
 
     span {
@@ -84,6 +84,10 @@
   .additives__wrapper {
     width: 708px;
     padding: 0;
+  }
+
+  .additives__list {
+    margin-bottom: 69px;
   }
 
   .additives__special-offer {

@@ -9,7 +9,7 @@
 .special-offer__image {
   width: 55px;
   height: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 }
 
 .special-offer__text {
@@ -22,27 +22,28 @@
 @media (min-width: $tablet-width) {
   .special-offer {
     display: flex;
-    align-items: center;
     width: 708px;
     min-height: 200px;
-    padding: 0 90px;
+    padding: 0;
+    padding-left: 90px;
+    padding-right: 114px;
   }
 
   .special-offer__image {
-    margin-right: auto;
-    margin-bottom: 0;
+    margin: auto;
+    margin-left: 0;
   }
 
   .special-offer__text {
     width: 170px;
+    margin: auto 0;
     text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .special-offer {
-    flex-direction: column;
-    justify-content: center;
+    display: block;
     width: 245px;
     min-height: 289px;
     padding: 65px 35px 40px;
@@ -50,7 +51,7 @@
 
   .special-offer__image {
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 59px;
   }
 
   .special-offer__text {
