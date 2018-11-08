@@ -1,5 +1,6 @@
 .catalog {
   @include container-mobile;
+  padding-top: 3px;
   margin-bottom: 28px;
 }
 
@@ -18,7 +19,8 @@
 @media (min-width: $tablet-width) {
   .catalog {
     @include container-tablet;
-    margin-bottom: 70px;
+    padding-top: 26px;
+    margin-bottom: 9px;
   }
 
   .catalog__list {
@@ -39,7 +41,8 @@
   .catalog {
     @include container-desktop;
     padding: 0;
-    margin-bottom: 80px;
+    padding-top: 25px;
+    margin-bottom: 17px;
   }
 
   .catalog__list {

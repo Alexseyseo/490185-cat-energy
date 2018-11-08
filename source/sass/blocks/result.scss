@@ -5,8 +5,8 @@
 }
 
 .result__item {
-  width: 124px;
-  margin-bottom: 15px;
+  width: 122px;
+  margin-bottom: 34px;
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   text-align: center;
@@ -14,8 +14,8 @@
 
 .result__value {
   margin: 0;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 13px;
+  margin-bottom: 9px;
   font-family: $font-oswald-text;
   font-size: 24px;
   line-height: 24px;
@@ -26,7 +26,7 @@
   display: block;
   width: 80px;
   margin: 0 auto;
-  margin-bottom: -12px;
+  margin-bottom: -16px;
   font-size: 12px;
   line-height: 12px;
   background-color: #f2f2f2;
@@ -38,24 +38,21 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: $tablet-width) {
-  .result {
-    align-items: center; // для выравнивания цены, возможно достаточно задать align-self для элемента цены?
-  }
-
   .result__item {
     width: 160px;
     margin: 0;
-    margin-right: 40px;
+    margin-right: 42px;
   }
 
   .result__value {
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -72,12 +69,14 @@
   .result__cost {
     width: 192px;
     margin: 0;
+    margin-left: auto;
+    padding-top: 11px;
     font-size: 20px;
     text-align: right;
 
     span {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 10px;
     }
   }
 }
@@ -99,11 +98,13 @@
 
   .result__cost {
     width: auto;
+    margin: 0;
+    padding: 0;
     text-align: left;
 
     span {
       margin-top: 0;
-      margin-left: 65px;
+      margin-left: 59px;
     }
   }
 }

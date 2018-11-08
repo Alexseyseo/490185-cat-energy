@@ -10,7 +10,7 @@
   list-style: none;
 
   li {
-    margin-right: 34px;
+    margin-right: 33px;
 
     &:last-child {
       margin-right: 0;
@@ -19,13 +19,31 @@
 }
 
 .social__item {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
   width: 22px;
   height: 22px;
+
+  svg {
+    margin: auto;
+    fill: #666666;
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    fill: $green-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .social__list li {
+    margin-right: 28px;
+  }
+
   .social__item {
     width: 30px;
     height: 30px;

@@ -1,22 +1,22 @@
 .map {
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 362px;
+  height: 362px;
 }
 
 @media (min-width: $tablet-width) {
   .map {
     background-image: url("../img/bg-map-tablet@1x.png");
-    min-height: 396px;
+    height: 396px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
     background-image: url("../img/bg-map-desktop@1x.png");
-    min-height: 399px;
+    height: 399px;
   }
 }
