@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  @include container;
+  @include container-mobile;
 }
 
 .page-footer__logo {

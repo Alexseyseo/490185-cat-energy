@@ -1,6 +1,5 @@
 .form-selection__item {
   @include container-mobile;
-  @include padding-container-mobile;
   margin-bottom: 28px;
 
   &--name {
@@ -74,6 +73,7 @@
 @media (min-width: $tablet-width) {
   .form-selection__wrapper {
     @include container-tablet;
+    padding: 0;
     margin-bottom: 75px;
   }
 

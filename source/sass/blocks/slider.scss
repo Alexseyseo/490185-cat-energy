@@ -1,5 +1,6 @@
 .slider {
   @include container-mobile;
+  padding: 0;
 }
 
 .slider__image {
@@ -58,6 +59,8 @@
 @media (min-width: $tablet-width) {
   .slider {
     @include container-tablet;
+    padding: 0;
+    padding-bottom: 65px;
   }
 
   .slider__image {

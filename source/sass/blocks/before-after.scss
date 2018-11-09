@@ -5,7 +5,6 @@
 
 .before-after__wrapper {
   @include container-mobile;
-  padding: 0 20px;
   padding-top: 18px;
 }
 
@@ -60,7 +59,6 @@
 
   .before-after__slider {
     background-image: linear-gradient(#ffffff, #ffffff 170px, #f2f2f2 170px);
-    padding-bottom: 65px;
   }
 }
 
