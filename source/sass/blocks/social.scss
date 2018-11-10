@@ -41,11 +41,29 @@
 
 @media (min-width: $tablet-width) {
   .social__list li {
-    margin-right: 28px;
+    margin-right: 25px;
   }
 
   .social__item {
     width: 30px;
     height: 30px;
+
+    &--vk svg {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--facebook svg {
+      margin: 0;
+      width: 14px;
+      height: 28px;
+    }
+
+    &--instagram svg {
+      width: 23px;
+      height: 23px;
+    }
   }
+
+
 }

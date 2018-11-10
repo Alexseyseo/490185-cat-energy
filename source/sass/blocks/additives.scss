@@ -33,7 +33,7 @@
   }
 
   &::before {
-    max-width: calc(50vw - 160px);
+    max-width: calc(50% - 160px);
   }
 }
 
@@ -81,7 +81,7 @@
     }
 
     &::before {
-      max-width: calc(50vw - 354px);
+      max-width: calc(50% - 357px);
     }
   }
 
@@ -111,7 +111,7 @@
 
   .additives__title {
     &::before {
-      max-width: calc(50vw - 650px);
+      max-width: calc(50% - 650px);
     }
   }
 

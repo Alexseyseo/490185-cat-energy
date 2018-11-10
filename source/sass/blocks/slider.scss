@@ -5,21 +5,30 @@
 
 .slider__image-wrapper {
   position: relative;
+  display: flex;
   width: 320px;
   height: 240px;
   margin-bottom: 32px;
 }
 
-.slider__image-before {
-  position: relative;
-  z-index: 2;
-}
+.slider__image {
+  display: flex;
+  flex: none;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 
-.slider__image-after {
-  display: none; // отключим, т.к. нет реализации слайдера
-  position: absolute;
-  top: 0;
-  z-index: 1;
+  picture {
+    flex: none;
+    display: block;
+    width: 320px;
+    height: auto;
+  }
+
+  &:nth-child(2) {
+    width: 0%;
+    justify-content: flex-end;
+  }
 }
 
 .slider__range {
@@ -77,6 +86,23 @@
     margin-bottom: 20px;
     padding-left: 13px;
   }
+
+  .slider__image picture {
+      width: 690px;
+  }
+
+  .slider__image {
+    width: 49%;
+
+    picture {
+      width: 690px;
+    }
+
+    &:nth-child(2) {
+      width: 51%;
+    }
+  }
+
 
   .slider__range {
     padding: 0;
@@ -150,6 +176,14 @@
   .slider__image-wrapper {
     margin-bottom: 41px;
     padding: 0;
+  }
+
+  .slider__image {
+    width: 53%;
+
+    &:nth-child(2) {
+      width: 47%;
+    }
   }
 
   .slider__range {
