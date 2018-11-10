@@ -8,9 +8,9 @@
     auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-mobile@2x.jpg"),
-        linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px);
-    }
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px);
+  }
 }
 
 .intro__wrapper {
