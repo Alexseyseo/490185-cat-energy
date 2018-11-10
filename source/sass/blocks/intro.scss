@@ -4,11 +4,17 @@
     linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: 320px auto,
+    auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(#63a73a, #63a73a 305px, #ffffff 305px);
+  }
 }
 
 .intro__wrapper {
   @include container-mobile;
-  padding: 0 20px;
   padding-top: 28px;
   font-family: $font-oswald-text;
   color: #ffffff;
@@ -77,8 +83,11 @@
     line-height: 20px;
   }
 
-  .intro__image {
+  .intro__image-wrap {
     order: 1;
+  }
+
+  .intro__image {
     width: 709px;
     height: 609px;
     margin-top: -80px;
@@ -102,7 +111,15 @@
     background-image: url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to left, #65a93c, #65a93c 50%, #ffffff 50%);
     background-repeat: no-repeat;
-    background-position: calc(50% + 359px) 100%;
+    background-position: 112% 0%,
+      0% 0%;
+    background-size: 720px auto,
+      auto auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to left, #65a93c, #65a93c 50%, #ffffff 50%);
+    }
   }
 
   .intro__wrapper {
@@ -128,7 +145,7 @@
     margin: 0;
     position: absolute;
     top: 142px;
-    right: 243px;
+    right: 259px;
     width: 552px;
     height: 499px;
   }

@@ -4,7 +4,6 @@
 
 .nutrition-category__wrapper {
   @include container-mobile;
-  padding: 0 20px;
 }
 
 .nutrition-category__item {
@@ -29,7 +28,7 @@
 }
 
 .nutrition-category__image {
-  position: absolute;
+  position: relative;
   max-width: none;
   top: 50%;
   left: 50%;
@@ -140,8 +139,8 @@
     line-height: 20px;
 
     &::after {
-      margin-left: 25px;
-      top: 11px;
+      margin-left: 23px;
+      top: 10px;
     }
   }
 }
@@ -180,7 +179,7 @@
   }
 
   .nutrition-category__image {
-    transform: scale(2) translate(-25%, -30%);
+    transform: scale(2) translate(-25%, -30%); //
   }
 
   .nutrition-category__title {

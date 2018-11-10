@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  @include container;
+  @include container-mobile;
 }
 
 .page-footer__logo {
@@ -35,6 +35,7 @@
   .page-footer__logo {
     padding: 0;
     padding-top: 6px;
+    padding-right: 35px;
     border: none;
   }
 

@@ -1,6 +1,5 @@
 .form-selection__item {
   @include container-mobile;
-  @include padding-container-mobile;
   margin-bottom: 28px;
 
   &--name {
@@ -59,7 +58,7 @@
   }
 
   &::before {
-    max-width: calc(50vw - 160px);
+    max-width: calc(50% - 160px);
   }
 }
 
@@ -74,6 +73,7 @@
 @media (min-width: $tablet-width) {
   .form-selection__wrapper {
     @include container-tablet;
+    padding: 0;
     margin-bottom: 75px;
   }
 
@@ -126,7 +126,7 @@
     }
 
     &::before {
-      max-width: calc(50vw - 354px);
+      max-width: calc(50% - 354px);
     }
 
     br {
@@ -169,6 +169,8 @@
 
     &--radio {
       padding: 25px 30px;
+      padding-top: 24px;
+      padding-left: 27px;
     }
 
     &--contacts {
@@ -195,7 +197,7 @@
 
   .form-selection__subtitle {
     &::before {
-      max-width: calc(50vw - 650px);
+      max-width: calc(50% - 650px);
     }
   }
 
