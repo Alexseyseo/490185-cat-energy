@@ -63,7 +63,9 @@
     display: flex;
     width: auto;
     padding-bottom: 0;
-    background-image: linear-gradient(#ffffff, #ffffff 190px, #f2f2f2 190px);
+    background-color: #f2f2f2;
+    background-image: linear-gradient(#ffffff, #ffffff 190px, transparent 190px),
+      linear-gradient(to right, #f2f2f2 calc(50% + 325px), #eaeaea calc(50% + 325px));
   }
 
   .before-after__wrapper {

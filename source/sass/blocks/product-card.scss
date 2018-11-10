@@ -84,7 +84,7 @@
 
 .product-card__button {
   padding: 10px;
-  width: 100%;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
@@ -97,6 +97,7 @@
     background-color: #f2f2f2;
 
     &--more {
+      display: block;
       background-color: #ffffff;
       border: 1px solid #e6e6e6;
       padding-top: 163px;
@@ -119,6 +120,7 @@
 
   .product-card__image {
     display: flex;
+    align-items: flex-end;
     width: 324px;
     height: 208px;
     margin: 0 auto;
@@ -161,6 +163,7 @@
   }
 
   .product-card__button {
+    width: 249px;
     margin: 0 38px;
   }
 }
@@ -192,5 +195,9 @@
 
   .product-card__subtext {
     padding: 0;
+  }
+
+  .product-card__button {
+    width: 169px;
   }
 }

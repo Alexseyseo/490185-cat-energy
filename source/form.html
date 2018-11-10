@@ -5,34 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy. Подбор программы питания</title>
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Pixel Glass оставлю для финального пиксель перфекта -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url( "img/form-mobile.jpg" );
-      }
-      /* Планшет */
-      @media ( min-width: 768px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "img/form-tablet.jpg" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 1300px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/form-desktop.jpg" );
-        }
-      }
-
-      BODY {
-        opacity: .5;
-      }
-    </style>
   </head>
   <body>
     <header class="page-header">
@@ -191,7 +163,8 @@
       </div>
     </footer>
     <script src="js/navigation.js"></script>
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f59a678b-82cf-46df-bf79-a5d1ee61aa51"></script>
-    <script src="js/icon_customImage.js"></script> -->
+    <script src="js/picturefill.min.js" async></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f59a678b-82cf-46df-bf79-a5d1ee61aa51"></script>
+    <script src="js/icon_customImage.js"></script>
   </body>
 </html>
