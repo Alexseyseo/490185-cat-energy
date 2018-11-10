@@ -7,9 +7,14 @@
 
 .page-header__logo {
   display: block;
+  margin-right: auto;
   width: 191px;
   height: 38px;
-  margin-right: auto;
+
+  img {
+    width: 191px;
+    height: 38px;
+  }
 
   &[href]:hover,
   &[href]:focus {
@@ -102,6 +107,11 @@
   .page-header__logo {
     width: 173px;
     height: 58px;
+
+    img {
+      width: 173px;
+      height: 58px;
+    }
   }
 
   .page-header__navigation {
@@ -119,7 +129,13 @@
   .page-header__logo {
     width: 202px;
     height: 59px;
+
+    img{
+      width: 202px;
+      height: 59px;
+    }
   }
+
 
   .page-header__navigation {
     width: 570px;
