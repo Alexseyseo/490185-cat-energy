@@ -8,7 +8,7 @@
   display: flex;
   width: 320px;
   height: 240px;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
 }
 
 .slider__image {
@@ -40,10 +40,21 @@
 
 .slider__text {
   margin: 0;
+  padding-top: 9px;
+  padding-bottom: 7px;
   font-family: $font-oswald-text;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border-bottom: 1px dotted #bebebe;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  &:active {
+    border-bottom-color: transparent;
+  }
 }
 
 .slider__controls {
@@ -75,22 +86,22 @@
 @media (min-width: $tablet-width) {
   .slider {
     width: auto;
-    padding-bottom: 75px;
+    padding-bottom: 66px;
     background-color: #f2f2f2;
     background-image: linear-gradient(#ffffff, #ffffff 169px, transparent 169px),
-      linear-gradient(to right, #f2f2f2 49%, #eaeaea 49%);
+      linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
   .slider__image-wrapper {
     width: 690px;
     height: 517px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     padding-left: 13px;
   }
 
   .slider__image {
-    width: 49%;
+    width: 50%;
     z-index: 2;
     background-image: linear-gradient(#ffffff, #ffffff 169px, #f2f2f2 169px);
 
@@ -102,6 +113,9 @@
       width: 100%;
       z-index: 1;
       background-image: none;
+    }
+    img {
+      padding-left: 13px;
     }
   }
 
@@ -175,13 +189,17 @@
   }
 
   .slider__image-wrapper {
-    margin-bottom: 41px;
+    margin-bottom: 32px;
     padding: 0;
   }
 
   .slider__image {
     width: 53%;
     background-image: linear-gradient(#ffffff, #ffffff 190px, #f2f2f2 190px);
+
+    img {
+      padding-left: 0;
+    }
 
     &:nth-child(2) {
       background: none;

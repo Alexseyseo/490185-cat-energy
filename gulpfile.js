@@ -56,7 +56,10 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
 });
-
+gulp.task("refresh", function (done) {
+ server.reload();
+ done();
+});
 gulp.task("build", gulp.series(
   "clean",
   "copy",
@@ -73,8 +76,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/*.html", gulp.series("html"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
 gulp.task("start", gulp.series("build", "server"));
