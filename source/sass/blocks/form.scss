@@ -87,15 +87,15 @@
   }
 }
 
-.form__input--text + .form__input-icon path {
+.form__input--text + .form__input-icon svg {
   fill: #222222;
 }
 
-.form__input--text:focus + .form__input-icon path {
+.form__input--text:focus + .form__input-icon svg {
   fill: $green-color;
 }
 
-.form__input--text:invalid + .form__input-icon path {
+.form__input--text:invalid + .form__input-icon svg {
   fill: #ff8282;
 }
 
